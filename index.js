@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 (async () => {
-  const status = "出勤中"; // freee APIの処理に置き換え予定
+  const status = "オフィス"; // freee APIの処理に置き換え予定
 
   await axios.post("https://slack.com/api/users.profile.set", {
     profile: {
@@ -16,5 +16,5 @@ const axios = require("axios");
     }
   });
 
-  console.log("Slack status updated.");
+  // console.log("Slack status updated.");
 })();
