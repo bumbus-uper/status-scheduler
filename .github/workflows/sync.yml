@@ -2,8 +2,9 @@ name: Freee to Slack Status Sync
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  # 5分おきに実行
-  workflow_dispatch:      # 手動実行もできるように
+    - cron: '0 1 * * 1-5'   # JST 10:00
+    - cron: '0 10 * * 1-5'  # JST 19:00
+  workflow_dispatch:
 
 jobs:
   sync:
